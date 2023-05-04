@@ -19,9 +19,12 @@
 %>
 <html>
 <head>
-    <title><%= "Login" %></title>
+    <jsp:include page="partials/head.jsp">
+        <jsp:param name="title" value="Home"/>
+    </jsp:include>
 </head>
 <body>
+    <jsp:include page="partials/navbar.jsp"/>
     <form id="login-form" method="POST">
         <label for="username">Username: </label>
         <input type="text" name="username" id="username">
